@@ -1,0 +1,28 @@
+.landing-navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1.5rem 3rem;
+	font-family: var(--font-family);
+}
+
+.landing-navbar .landing-navbar-links {
+	gap: 5rem;
+	display: flex;
+	font-weight: 500;
+	font-size: 1.1rem;
+	margin: 0 4rem;
+}
+
+.landing-navbar .landing-navbar-links p {
+	color: var(--color-navlinks);
+	transition: 0.2s all ease;
+}
+
+.landing-navbar .landing-navbar-links p:hover {
+	color: #222;
+}
+
+.landing-navbar-logo img {
+	width: 65%;
+}
