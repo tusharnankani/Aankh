@@ -1,16 +1,13 @@
 import React from 'react';
 import './commoninput.css';
-import { useState } from 'react';
 
-const CommonInput = ({ placeholderText = 'Input' }) => {
-	// const [ text, setText ] = useState('');
-
+const CommonInput = ({ placeholderText = 'Input', value, onChange }) => {
 	return (
 		<input
 			type="text"
 			placeholder={placeholderText}
-			// value={text}
-			// onChange={(e) => setText(e.target.value)}
+			value={value}
+			onChange={onChange}
 		/>
 	);
 };

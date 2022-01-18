@@ -1,7 +1,7 @@
 input {
 	width: 100%;
 	border: 1px solid var(--color-input-border);
-	padding: 1.2rem 2rem;
+	padding: 1rem 2rem;
 	border-radius: 0.9rem;
 	font-family: Inter;
 	font-size: 1rem;

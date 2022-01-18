@@ -15,9 +15,17 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	cursor: pointer;
+}
+
 .section-type {
 	margin: 2rem 6rem;
 	height: 75vh;
+}
+
+.title-heading {
+	color: var(--color-heading);
 }
 
 .gradient-bg {
