@@ -1,0 +1,35 @@
+.user-login .logo img {
+	width: 8rem;
+}
+
+.user-login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	margin: 1.5rem;
+}
+
+.user-login .login-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3em;
+}
+
+.login-form .input-fields {
+	max-width: 40vw;
+	min-width: 30vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1.75em;
+}
+
+.input-fields input {
+	padding: 0.9rem 1.8rem;
+	font-size: 1rem;
+}
