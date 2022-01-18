@@ -21,14 +21,14 @@ const Landing = () => {
 					</p>
 				</div>
 				<div className="landing-cta">
-					<a href="/register">
+					<a href="/create">
 						<CtaButton text="Create a test" />
 					</a>
 					<p className="desc">OR</p>
 					<div className="input-item unique-link">
 						<CommonInput placeholderText="Unique test link?" />
 						<span className="join-link">
-							<a href="/">Join</a>
+							<a href="/register">Join</a>
 						</span>
 					</div>
 				</div>

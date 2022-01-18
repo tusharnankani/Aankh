@@ -3,15 +3,7 @@ import './register.css';
 import logo from './../../assets/logofont.svg';
 import { CommonInput, CtaButton } from '../../components';
 
-const inputField = [
-	'Email ID',
-	'Organization Name',
-	'Test Name',
-	'Question Paper Link',
-	'Total Expected Candidates',
-	'Start Date-Time Format',
-	'Duration'
-];
+const inputField = [ 'Email ID', 'Full Name', 'Password' ];
 
 const Register = () => {
 	return (
@@ -19,15 +11,15 @@ const Register = () => {
 			<div className="logo">
 				<img src={logo} alt="aankh-logo" />
 			</div>
-			<div className="create-form">
-				<h1 className="title-heading">Create a test</h1>
+			<div className="register-form">
+				<h1 className="title-heading">Register</h1>
 				<div className="input-fields">
 					{inputField.map((item) => (
 						<CommonInput placeholderText={item} />
 					))}
 				</div>
-
-				<CtaButton text="Create" />
+				<div className="image-capture">Image Capture</div>
+				<CtaButton text="Register" />
 			</div>
 		</div>
 	);
