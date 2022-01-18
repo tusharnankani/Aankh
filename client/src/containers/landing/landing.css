@@ -1,0 +1,64 @@
+.landing-page {
+	font-family: var(--font-family);
+	padding: 6rem 1rem;
+}
+
+.landing-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	max-width: 45rem;
+	gap: 2rem;
+}
+
+.landing-content .headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.landing-content .headings .sub-text {
+	font-weight: 600;
+	font-size: 3.6rem;
+	letter-spacing: -2px;
+	color: var(--color-heading);
+}
+
+.landing-content .headings .main-heading {
+	font-weight: 700;
+	font-size: 3.8rem;
+	letter-spacing: -2px;
+}
+
+.landing-content .desc {
+	color: var(--color-text);
+	font-size: 1.4rem;
+}
+
+.landing-cta {
+	margin: 4rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 3rem;
+}
+
+.landing-cta .input-item {
+	max-width: 35rem;
+	min-width: 30rem;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.landing-cta .desc {
+	color: var(--color-text);
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.landing-cta .join-link {
+	color: var(--color-heading);
+	font-size: 1.2rem;
+	font-weight: 600;
+}
