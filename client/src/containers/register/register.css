@@ -1,0 +1,35 @@
+.user-register .logo img {
+	width: 8rem;
+}
+
+.user-register {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	margin: 1.5rem;
+}
+
+.user-register .create-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+}
+
+.input-fields {
+	max-width: 40vw;
+	min-width: 30vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1.2em;
+}
+
+.input-fields input {
+	padding: 0.9rem 1.8rem;
+	font-size: 1rem;
+}

@@ -21,7 +21,9 @@ const Landing = () => {
 					</p>
 				</div>
 				<div className="landing-cta">
-					<CtaButton text="Create a test" />
+					<a href="/register">
+						<CtaButton text="Create a test" />
+					</a>
 					<p className="desc">OR</p>
 					<div className="input-item unique-link">
 						<CommonInput placeholderText="Unique test link?" />
