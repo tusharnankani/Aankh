@@ -1,7 +1,7 @@
 import React from 'react';
 import './register.css';
 import logo from './../../assets/logofont.svg';
-import { CommonInput, CtaButton } from '../../components';
+import { CommonInput, CtaButton, WebcamCapture } from '../../components';
 
 const inputField = [ 'Email ID', 'Full Name', 'Password' ];
 
@@ -18,7 +18,9 @@ const Register = () => {
 						<CommonInput placeholderText={item} />
 					))}
 				</div>
-				<div className="image-capture">Image Capture</div>
+				<div className="image-capture">
+					<WebcamCapture />
+				</div>
 				<CtaButton text="Register" />
 			</div>
 		</div>
