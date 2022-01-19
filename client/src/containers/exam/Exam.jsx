@@ -3,6 +3,15 @@ import { Timer } from './../../components';
 import './exam.css';
 import devtools from './../../../node_modules/devtools-detect/index.js';
 
+function check() {
+	if (!window.screenTop && !window.screenY) {
+		// window.alert(
+		// 	'Your exam will terminate. Please go to full screen mode.'
+		// );
+		console.log('Not full screen');
+	}
+}
+
 const Exam = ({
 	examName = 'Periodic Test - AI: 17th January, 2022',
 	studentID = '1902112',
@@ -24,6 +33,9 @@ const Exam = ({
 		console.log('Is DevTools open:', event.detail.isOpen);
 		console.log('DevTools orientation:', event.detail.orientation);
 	});
+
+	// Full screen check
+	setInterval(check, 10000);
 
 	return (
 		<div className="exam-container">
