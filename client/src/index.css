@@ -11,6 +11,9 @@
 	--color-text: #878899;
 	--color-input-border: #00000029;
 	--color-input-placeholder: #00000033;
+
+	--color-warning-bg: rgba(255, 205, 68, 0.651);
+	--color-terminate-bg: rgba(255, 68, 68, 0.651);
 }
 
 body {

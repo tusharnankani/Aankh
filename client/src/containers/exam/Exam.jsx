@@ -22,6 +22,15 @@ const Exam = ({
 			</div>
 
 			<div className="embedded-form">
+				{/* add blur to disable to class, remove hide */}
+				<div className="hide">
+					<h2>Message: People Detected</h2>
+					<h2>Warnings: 4</h2>
+
+					<h1>Exam Terminated</h1>
+				</div>
+
+				{/* add blur to class */}
 				<div className="form">
 					<h2 className="title-heading">{examName}</h2>
 					<iframe
