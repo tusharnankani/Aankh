@@ -113,3 +113,11 @@
 		visibility: hidden;
 	}
 }
+
+.left-column .image-capture {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}

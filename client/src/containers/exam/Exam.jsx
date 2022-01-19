@@ -1,15 +1,23 @@
 import React from 'react';
-import { Timer } from './../../components';
-import './exam.css';
+import { Timer, WebLiveCapture } from './../../components';
 import devtools from './../../../node_modules/devtools-detect/index.js';
+import './exam.css';
 
 function check() {
 	if (!window.screenTop && !window.screenY) {
 		// window.alert(
 		// 	'Your exam will terminate. Please go to full screen mode.'
 		// );
-		console.log('Not full screen');
+		// console.log('Not full screen');
 	}
+}
+
+function captureCheck() {
+	// defualt hidden
+	let btn = document.querySelector(
+		'#root > div > div > div.left-column > div.image-capture > button'
+	);
+	btn.click();
 }
 
 const Exam = ({
@@ -37,16 +45,25 @@ const Exam = ({
 	// Full screen check
 	setInterval(check, 10000);
 
+	// Image Capture
+	setInterval(captureCheck, 20000);
+
 	return (
 		<div className="exam-container">
-			<div className="exam-details">
-				<h3 className="title-heading">Student Details</h3>
+			<div className="left-column">
+				{/* default hidden */}
+				<div className="image-capture">
+					<WebLiveCapture />
+				</div>
+				<div className="exam-details">
+					<h3 className="title-heading">Student Details</h3>
 
-				<div className="details">
-					<h4 className="student-id">Student ID: {studentID}</h4>
-					<h4 className="student-email">
-						Student Email: {studentEmail}
-					</h4>
+					<div className="details">
+						<h4 className="student-id">Student ID: {studentID}</h4>
+						<h4 className="student-email">
+							Student Email: {studentEmail}
+						</h4>
+					</div>
 				</div>
 			</div>
 

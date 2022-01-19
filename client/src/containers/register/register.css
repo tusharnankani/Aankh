@@ -74,6 +74,7 @@
 	height: 250px;
 	position: absolute;
 }
+
 .image-capture img {
 	z-index: 10;
 	height: 200px;
