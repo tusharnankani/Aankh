@@ -1,0 +1,57 @@
+.terminated {
+	border: 1px solid #00000016;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+	max-width: 25rem;
+	min-width: 24rem;
+	border-radius: 1rem;
+	min-height: 12rem;
+}
+
+.terminated .terminated-details {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.3rem;
+}
+
+.terminated .terminated-details h4 {
+	color: #000000B2;
+	font-style: normal;
+	font-weight: 500;
+}
+
+.terminated .btns {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.terminated .btns button {
+	background-color: var(--gradient-bg);
+	font-family: Inter;
+	font-size: 1rem;
+	font-weight: 600;
+	border: none;
+	padding: 0.8rem 2rem;
+	border-radius: 0.9rem;
+	box-shadow: 4px 5px 30px 2px rgba(0, 28, 80, 0.045);
+	transition: 0.3s all ease;
+}
+
+.terminated .btns button:hover,
+.terminated .btns button:focus {
+	outline: none;
+	box-shadow: 4px 5px 30px 2px rgba(0, 28, 80, 0.1);
+}
+
+.terminated .btns .terminate-btn {
+	color: #ff5b5b;
+}
+
+.terminated .btns .continue-btn {
+	color: #009320;
+}
