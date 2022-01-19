@@ -5,7 +5,8 @@ import {
 	Landing,
 	Login,
 	Register,
-	Status
+	Status,
+	Exam
 } from './containers';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -21,6 +22,7 @@ const App = () => {
 					<Route path="/login" element={<Login />} />
 					<Route path="/dashboard" element={<Dashboard />} />
 					<Route path="/status" element={<Status />} />
+					<Route path="/exam" element={<Exam />} />
 				</Routes>
 			</BrowserRouter>
 		</div>

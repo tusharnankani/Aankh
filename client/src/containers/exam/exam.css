@@ -1,0 +1,91 @@
+.exam-container {
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+}
+
+.exam-container .exam-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.2rem;
+	margin: 6rem 2rem;
+	padding: 1rem 2rem;
+	border: 1px solid var(--color-input-border);
+	border-radius: 1rem;
+	height: fit-content;
+	max-width: 15rem;
+}
+
+.exam-container .exam-details .details {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 1rem;
+	color: var(--color-navlinks);
+}
+
+.exam-container .exam-details .details h4 {
+	font-style: normal;
+	font-weight: 400;
+	word-wrap: wrap;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: var(--gradient-bg);
+	gap: 1em;
+	border: none;
+}
+
+.embedded-form .form h2 {
+	display: flex;
+	text-align: center;
+	align-self: center;
+}
+
+.form iframe {
+	border: none;
+	width: 50vw;
+	height: 90vh;
+}
+
+.timer {
+	margin: 6rem 2rem;
+	padding: 1rem 2rem;
+	border: 1px solid var(--color-input-border);
+	border-radius: 1rem;
+	height: fit-content;
+	max-width: 9rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.responsive-message {
+	display: none;
+}
+
+@media only screen and (max-width: 800px) {
+	h2 {
+		font-size: 1.25rem;
+		font-weight: 500;
+	}
+
+	.responsive-message {
+		display: block;
+	}
+
+	.form-link,
+	.form h2,
+	.exam-details,
+	.timer {
+		display: none;
+		visibility: hidden;
+	}
+}
