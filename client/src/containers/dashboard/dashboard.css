@@ -1,0 +1,46 @@
+.admin-dashboard .logo img {
+	width: 8rem;
+}
+
+.admin-dashboard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2em;
+	margin: 1.5rem;
+}
+
+.admin-dashboard .test-dashboard {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 2em;
+	padding: 2rem;
+}
+
+.test-items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.test-items .test-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
+}
+
+.copy-link button {
+	color: var(--color-heading);
+	background-color: var(--gradient-bg);
+	font-weight: 600;
+	font-size: 1rem;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 0.9rem;
+	max-width: 8rem;
+}

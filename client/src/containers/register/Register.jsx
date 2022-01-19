@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from './../../assets/logofont.svg';
-import humanOutline from './../../assets/human-outline.svg';
 import human from './../../assets/human.svg';
 import { CommonInput, CtaButton, WebcamCapture } from '../../components';
 import './register.css';
