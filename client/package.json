@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "chart.js": "^2.9.4",
     "devtools-detect": "^4.0.0",
     "react": "^17.0.2",
+    "react-chartjs-2": "^2.11.2",
     "react-dom": "^17.0.2",
     "react-router": "^6.2.1",
     "react-router-dom": "^6.2.1",

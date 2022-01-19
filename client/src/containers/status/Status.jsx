@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './../../assets/logofont.svg';
-import { CopyLink, Terminated } from '../../components';
+import { CopyLink, Terminated, Chart, PieChart } from '../../components';
 import './status.css';
 
 const mockList = [
@@ -48,7 +48,9 @@ const Status = ({
 					<CopyLink link={link} />
 				</div>
 			</div>
-
+			<div className="charts">
+				<PieChart />
+			</div>
 			<div className="terminated-students">
 				<h2 className="title-heading">Students Terminated</h2>
 				<div className="terminated-boxes">

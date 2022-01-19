@@ -10,6 +10,16 @@
 	margin: 1.5rem 1.5rem 6rem;
 }
 
+.status-dashboard .charts {
+	width: 40vw;
+}
+
+.status-dashboard .charts .two-charts {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .status-dashboard .test-details {
 	display: flex;
 	flex-direction: column;
