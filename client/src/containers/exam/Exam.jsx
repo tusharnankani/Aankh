@@ -1,13 +1,30 @@
 import React from 'react';
 import { Timer } from './../../components';
 import './exam.css';
+import devtools from './../../../node_modules/devtools-detect/index.js';
 
 const Exam = ({
 	examName = 'Periodic Test - AI: 17th January, 2022',
 	studentID = '1902112',
-	studentEmail = 'tushar12@gmail.com',
-	duration = 60
+	studentEmail = 'tusharnankani3@gmail.com',
+	duration = 60,
+	formLink = 'https://docs.google.com/forms/d/e/1FAIpQLScGieRkiR-718h3RwfOmLBRxLd8c8rySsYB8L4yE00rZc95CA/viewform'
 }) => {
+	// TO EMBED
+	formLink += '?embedded=true';
+
+	// Check if it's open
+	console.log('Is DevTools open:', devtools.isOpen);
+
+	// Check it's orientation, `undefined` if not open
+	console.log('DevTools orientation:', devtools.orientation);
+
+	// Get notified when it's opened/closed or orientation changes
+	window.addEventListener('devtoolschange', (event) => {
+		console.log('Is DevTools open:', event.detail.isOpen);
+		console.log('DevTools orientation:', event.detail.orientation);
+	});
+
 	return (
 		<div className="exam-container">
 			<div className="exam-details">
@@ -36,7 +53,7 @@ const Exam = ({
 					<iframe
 						title={examName}
 						className="form-link"
-						src="https://docs.google.com/forms/d/e/1FAIpQLScGieRkiR-718h3RwfOmLBRxLd8c8rySsYB8L4yE00rZc95CA/viewform?embedded=true"
+						src={formLink}
 					>
 						Form
 					</iframe>
