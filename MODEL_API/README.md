@@ -1,5 +1,13 @@
 ### To install required libraries run :
 
+1. Create virtual environment (add venv to gitignore)
+
+```py
+virtualenv venv
+```
+
+2. Install required libraries
+
 ```py
 
 pip install -r requirements.txt
