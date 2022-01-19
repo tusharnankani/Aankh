@@ -1,0 +1,59 @@
+.status-dashboard .logo img {
+	width: 8rem;
+}
+
+.status-dashboard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5em;
+	margin: 1.5rem 1.5rem 6rem;
+}
+
+.status-dashboard .test-details {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 2em;
+	padding: 2rem;
+}
+
+.test-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.test-details .test-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
+}
+
+.copy-link button {
+	color: var(--color-heading);
+	background-color: var(--gradient-bg);
+	font-weight: 600;
+	font-size: 1rem;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 0.9rem;
+	max-width: 8rem;
+}
+
+.status-dashboard .terminated-students {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 80vw;
+	gap: 3rem;
+}
+
+.status-dashboard .terminated-students .terminated-boxes {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+}
