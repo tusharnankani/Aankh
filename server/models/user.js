@@ -19,11 +19,18 @@ const userSchema = new mongoose.Schema({
     },
     hash_password: {
         type: String,
-        required: true,
+        required: true
     },
     profilePicture: {
         type: String,
     },
+    test_code: { type: String, default: "none" },
+    multi_window: { type: Number, default: 0 },
+    full_screen: { type: Number, default: 0 },
+    person_detected: { type: Number, default: 0 },
+    voice_detected: { type: Number, default: 0 },
+    face_covered: { type: Number, default: 0 },
+    status: { type: String, default: "safe" }
 }, { timestamps: true });
 
 userSchema.virtual('password')

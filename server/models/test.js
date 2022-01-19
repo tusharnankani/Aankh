@@ -24,6 +24,11 @@ const testSchema = new mongoose.Schema({
         type: String,
         default: "none"
     },
+    test_code: {
+        type: String,
+        unique: true,
+        default: "none"
+    },
     start_time: {
         type: Date,
         required: true,
@@ -41,61 +46,8 @@ const testSchema = new mongoose.Schema({
     total_threshold_warnings: {
         type: Number,
         required: true,
-        default: 2
-    },
-    threshold_multi_people: {
-        type: Number,
-        required: true,
-        default: 2,
-    },
-    threshold_voice: {
-        type: Number,
-        required: true,
         default: 3
-    },
-    threshold_third: {
-        type: Number,
-        required: true,
-        default: 2
-    },
-    candidates: [
-        {
-            aspirantId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-            status: {
-                type: String,
-                default: "safe"
-            },
-            warnings: [
-                {
-                    person_detected: [
-                        {
-                            time: { type: Date }
-                        }
-                    ]
-                },
-                {
-                    voice_detected: [
-                        {
-                            time: { type: Date }
-                        }
-                    ]
-                },
-                {
-                    face_covered_detected: [
-                        {
-                            time: { type: Date }
-                        }
-                    ]
-                }
-            ]
-        }
-    ],
-    // no need for the status exam
-    // status: {
-    //     type: String,
-    //     default: "Coming soon"
-    // },
-
+    }
 }, { timestamps: true });
 
 
