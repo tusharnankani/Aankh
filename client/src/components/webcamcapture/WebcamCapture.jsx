@@ -27,17 +27,19 @@ const WebcamCapture = () => {
 					ref={webcamRef}
 					screenshotFormat="image/jpeg"
 					height={300}
-					width={400}
+					width={450}
 					videoConstraints={videoConstraints}
 				/>
 			) : (
-				<img src={image} alt="captured" />
+				<img className="captured" src={image} alt="captured" />
 			)}
 
 			{image === '' ? (
 				<button onClick={capture}>Capture photo</button>
 			) : (
-				<button onClick={capture}>Proceed</button>
+				<button className="proceed" href="/login">
+					Proceed
+				</button>
 			)}
 		</React.Fragment>
 	);

@@ -19,6 +19,9 @@ const NavLinks = () => (
 		<p>
 			<a href="/">Contact Us</a>
 		</p>
+		<p>
+			<a href="/login">Login</a>
+		</p>
 	</React.Fragment>
 );
 

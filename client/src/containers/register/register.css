@@ -54,3 +54,28 @@
 	-webkit-box-shadow: 10px 9px 40px 7px rgba(177, 202, 255, 0.21);
 	-moz-box-shadow: 10px 9px 40px 7px rgba(177, 202, 255, 0.21);
 }
+
+.image-capture .captured {
+	margin: 4rem 0;
+}
+
+.image-capture .proceed {
+	margin: 5rem 0 0;
+}
+
+.image-capture img {
+	z-index: 10;
+	height: 200px;
+	position: absolute;
+}
+
+.image-capture .captured {
+	z-index: 10;
+	height: 250px;
+	position: absolute;
+}
+.image-capture img {
+	z-index: 10;
+	height: 200px;
+	position: absolute;
+}
