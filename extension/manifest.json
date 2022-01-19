@@ -1,0 +1,22 @@
+{
+    "name": "Aankh - The Proctor",
+    "description": "An extension to keep a track of tabs and full screen mode.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": {
+            "16": "/assets/logo.png",
+            "32": "/assets/logo.png",
+            "48": "/assets/logo.png",
+            "128": "/assets/logo.png"
+        },
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}

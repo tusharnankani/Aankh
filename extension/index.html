@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aankh Extension</title>
+    <script type="text/javascript" src="popup.js"></script>
+	<style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+		body{
+			min-width: 200px;
+			min-height: 100px;
+            font-family: 'Inter', sans-serif;
+		}
+
+        .details {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+        }
+	</style>
+</head>
+<body>
+    <div class="details">
+        <p>No of Opened Tabs = <span id="tabs_count"></span></p>
+        <p>Is Full Screened = <span id="full_screen">false</span></p>
+    </div>
+</body>
+</html>
