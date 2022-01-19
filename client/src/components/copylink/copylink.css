@@ -1,0 +1,14 @@
+.copy-link {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.copy-link .copy-link-input {
+	min-width: 20rem;
+	max-width: 30rem;
+}
+
+.copy-link .copy-link-input input {
+	padding: 0.8rem 1rem;
+}
