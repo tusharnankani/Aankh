@@ -15,7 +15,7 @@ const WebLiveCapture = () => {
 		() => {
 			const imageSrc = webcamRef.current.getScreenshot();
 			setImage(imageSrc);
-			console.log('Captured');
+			// console.log('Captured');
 		},
 		[ webcamRef ]
 	);

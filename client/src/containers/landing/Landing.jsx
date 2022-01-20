@@ -42,7 +42,7 @@ const Landing = () => {
 					<div className="input-item unique-link">
 						<CommonInput placeholderText="Unique test code" />
 						<span className="join-link">
-							<a href="/register">Join</a>
+							<a href="/exam">Join</a>
 						</span>
 					</div>
 				</div>

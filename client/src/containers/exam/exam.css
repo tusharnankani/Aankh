@@ -74,7 +74,6 @@
 .disable {
 	margin-left: 3rem;
 	background-color: var(--color-warning-bg);
-	background-color: var(--color-terminate-bg);
 	z-index: 10;
 	position: absolute;
 	width: 60vw;
@@ -84,6 +83,10 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+}
+
+.terminate {
+	background-color: var(--color-terminate-bg);
 }
 
 .blur {

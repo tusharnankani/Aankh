@@ -1,45 +1,94 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Timer, WebLiveCapture } from './../../components';
 import devtools from './../../../node_modules/devtools-detect/index.js';
 import './exam.css';
 
-function check() {
-	if (!window.screenTop && !window.screenY) {
-		// window.alert(
-		// 	'Your exam will terminate. Please go to full screen mode.'
-		// );
-		// console.log('Not full screen');
-	}
-}
-
-function captureCheck() {
-	// defualt hidden
-	let btn = document.querySelector(
-		'#root > div > div > div.left-column > div.image-capture > button'
-	);
-	btn.click();
-}
-
 const Exam = ({
-	examName = 'Periodic Test - AI: 17th January, 2022',
+	examName = 'Periodic Test - DBMS: 20th January, 2022',
 	studentID = '1902112',
 	studentEmail = 'tusharnankani3@gmail.com',
 	duration = 60,
 	formLink = 'https://docs.google.com/forms/d/e/1FAIpQLScGieRkiR-718h3RwfOmLBRxLd8c8rySsYB8L4yE00rZc95CA/viewform'
 }) => {
+	function captureCheck() {
+		// defualt hidden
+		let btn = document.querySelector(
+			'#root > div > div > div.left-column > div.image-capture > button'
+		);
+		btn.click();
+	}
+
+	function check() {
+		if (!window.screenTop && !window.screenY && isFullScreen) {
+			// window.alert(
+			// 	'Your exam will terminate. Please go to full screen mode.'
+			// );
+			// console.log('Not full screen');
+			setIsFullScreen(false);
+		}
+
+		if (!isFullScreen) {
+			setWarningCnt(warningCnt + 1);
+			setShowMessage(
+				'Your exam will terminate. Please go to full screen mode.'
+			);
+			disableForm();
+		} else {
+			enableForm();
+		}
+
+		terminateExam();
+	}
+
+	// THERE IS BUG HERE :'))
+
+	let overlay = document.getElementById('overlay');
+	let formBlur = document.getElementById('form-blur');
+
+	function disableForm() {
+		overlay.classList.remove('hide');
+		overlay.classList.add('disable');
+		formBlur.classList.add('blur');
+	}
+
+	function enableForm() {
+		overlay.classList.add('hide');
+		overlay.classList.remove('disable');
+		formBlur.classList.remove('blur');
+	}
+
+	function terminateExam() {
+		if (warningCnt > 5) {
+			disableForm();
+			overlay.classList.add('terminate');
+		}
+	}
+
+	const [ warningCnt, setWarningCnt ] = useState(0);
+	const [ isDevToolsOpen, setIsDevToolsOpen ] = useState(false);
+	const [ isFullScreen, setIsFullScreen ] = useState(true);
+	const [ showMessage, setShowMessage ] = useState('');
+
 	// TO EMBED
 	formLink += '?embedded=true';
 
-	// Check if it's open
-	console.log('Is DevTools open:', devtools.isOpen);
-
-	// Check it's orientation, `undefined` if not open
-	console.log('DevTools orientation:', devtools.orientation);
-
 	// Get notified when it's opened/closed or orientation changes
 	window.addEventListener('devtoolschange', (event) => {
-		console.log('Is DevTools open:', event.detail.isOpen);
-		console.log('DevTools orientation:', event.detail.orientation);
+		// console.log('Is DevTools open:', event.detail.isOpen);
+		// console.log('DevTools orientation:', event.detail.orientation);
+		if (event.detail.isOpen) {
+			setWarningCnt(warningCnt + 1);
+			setIsDevToolsOpen(true);
+		}
+
+		if (!isDevToolsOpen) {
+			setShowMessage('Your exam will terminate. Please close devtools.');
+			disableForm();
+		} else {
+			enableForm();
+		}
+
+		terminateExam();
 	});
 
 	// Full screen check
@@ -68,16 +117,16 @@ const Exam = ({
 			</div>
 
 			<div className="embedded-form">
-				{/* add blur to disable to class, remove hide */}
-				<div className="hide">
-					<h2>Message: People Detected</h2>
-					<h2>Warnings: 4</h2>
+				{/* add disable to class, remove hide */}
+				<div className="hide" id="overlay">
+					<h2>Message: {showMessage}</h2>
+					<h2>Warnings: {warningCnt}</h2>
 
 					<h1>Exam Terminated</h1>
 				</div>
 
 				{/* add blur to class */}
-				<div className="form">
+				<div className="form" id="form-blur">
 					<h2 className="title-heading">{examName}</h2>
 					<iframe
 						title={examName}

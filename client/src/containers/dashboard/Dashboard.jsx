@@ -6,18 +6,18 @@ import './dashboard.css';
 const mockTests = [
 	{
 		name: 'Periodic Test - DBMS',
-		link: 'http://google.com',
-		time: '19/01/2022 17:30'
-	},
-	{
-		name: 'Periodic Test - DBMS',
-		link: 'http://google.com',
+		link: 'asd-qwvs-dfs',
 		time: '20/01/2022 17:30'
 	},
 	{
-		name: 'Periodic Test - DBMS',
-		link: 'http://google.com',
+		name: 'Periodic Test - OSLT',
+		link: 'pbl-dfse-phd',
 		time: '21/01/2022 17:30'
+	},
+	{
+		name: 'Periodic Test - SPCC',
+		link: 'fhh-dfgg-aee',
+		time: '22/01/2022 17:30'
 	}
 ];
 
