@@ -10,6 +10,7 @@
 	justify-content: center;
 	max-width: 45rem;
 	gap: 2rem;
+	margin: 5rem 0 0;
 }
 
 .landing-content .headings {
@@ -36,7 +37,7 @@
 }
 
 .landing-cta {
-	margin: 4rem 0;
+	margin: 4rem 0 8rem;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -55,4 +56,113 @@
 	color: var(--color-text);
 	font-weight: 600;
 	font-size: 1rem;
+}
+
+/* LANDING SECTION - 2 */
+
+.features-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 4rem 2rem;
+	height: 100vh;
+}
+
+.features-content .curr-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+}
+
+.features-content p {
+	font-size: 2rem;
+}
+
+.features-content h2 {
+	font-size: 3rem;
+}
+
+.features-content .all-features {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 4rem 8rem;
+}
+
+.features-content .all-features .single-feature {
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+.mid-cta .phew {
+	font-size: 1rem;
+	text-align: center;
+	color: var(--color-text);
+}
+
+.features-content .mid-cta,
+.final-features .mid-cta {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 3rem;
+}
+
+/* LANDING SECTION - 3 */
+
+.final-features {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 6rem 0;
+}
+
+.final-features .top-sec {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 4rem;
+	margin: 2rem;
+}
+
+.final-features .top-sec .left-text,
+.final-features .top-sec .right-text {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.final-features .top-sec .right-text {
+	text-align: right;
+}
+
+.final-features .top-sec .left-text h3,
+.final-features .top-sec .right-text h3 {
+	font-weight: 500;
+	font-size: 1.7rem;
+}
+
+.final-features .top-sec .left-text h1,
+.final-features .top-sec .right-text h1 {
+	font-weight: 600;
+	font-size: 2.5rem;
+}
+
+.final-features .top-sec .infinite {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.final-features .top-sec .infinite img {
+	width: 12rem;
+}
+
+.final-features .final-cta {
+	margin: 5rem;
 }

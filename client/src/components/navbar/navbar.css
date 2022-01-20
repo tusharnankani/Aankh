@@ -2,8 +2,15 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 1.5rem 3rem;
+	padding: 0.8rem 3rem;
 	font-family: var(--font-family);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 12;
+	background-color: var(--gradient-bg);
+	backdrop-filter: blur(12px);
+	border-bottom: 1px solid var(--color-input-border);
 }
 
 .landing-navbar .landing-navbar-links {
