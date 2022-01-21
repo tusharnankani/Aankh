@@ -1,17 +1,17 @@
 <br />
 <p align="center">
-  <img src="./client/src/assets/logofont.png" width="20%" />
+  <img src="./client/src/assets/logofont.svg" width="20%" />
 </p>
 <br />
 
 <p align="center">
-  The only proctoring framework you will ever need.
+  A straightforward framework built for automatic proctoring to create online tests, <i>effortlessly</i>.
   <br />
   <br />
   <a href=""><b>Explore the docs »</b></a>
   <br />
   <br />
-  <a href="">Design</a>
+  <a href="#architecture">Architecture</a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="#demonstration">Demonstration</a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
@@ -33,6 +33,7 @@
 #### Checks for cheating
 
 - Face Verification
+- Voice Detection
 - Multiple People Detection
 - Dev Tools Check
 - Multiple Tabs Check
@@ -43,7 +44,6 @@
 These were rejcted due to false positives and unsurity of cheating.
 
 - Eye Tracking
-- Voice Detection
 - Object detection
 - Mouse Tracking
 
@@ -52,3 +52,5 @@ These were rejcted due to false positives and unsurity of cheating.
 - Vivek Namaye
 - Akshay Kanade
 - Tushar Nankani
+
+<sup>We are Team VAT, not Value Added Tax, but Vivek, Akshay and myself, Tushar.</sup>
