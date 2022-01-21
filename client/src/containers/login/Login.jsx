@@ -18,7 +18,9 @@ const Login = () => {
 						<CommonInput placeholderText={item} />
 					))}
 				</div>
-				<CtaButton text="Login" />
+				<a href="/">
+					<CtaButton text="Login" />
+				</a>
 			</div>
 		</div>
 	);

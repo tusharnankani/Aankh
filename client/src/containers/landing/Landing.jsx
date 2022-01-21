@@ -6,10 +6,10 @@ import './landing.css';
 const featureList = [
 	'Face Verification',
 	'Multiple People Detection',
+	'Voice Detection',
 	'Devtools Check',
 	'Full Screen Check',
-	'Multiple Tabs Check',
-	'Face Cover Check'
+	'Multiple Tabs Check'
 ];
 
 const Landing = () => {

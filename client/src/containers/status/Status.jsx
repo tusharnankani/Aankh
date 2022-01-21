@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from './../../assets/logofont.svg';
-import { CopyLink, Terminated, Chart, PieChart } from '../../components';
+import { CopyLink, Terminated, PieChart } from '../../components';
 import './status.css';
 
 const mockList = [
 	{
 		studentID: '1902112',
 		warningCnt: 5,
-		message: 'Multiple people detected'
+		message: 'DevTools detected'
 	},
 	{
 		studentID: '1902141',
@@ -22,14 +22,14 @@ const mockList = [
 	{
 		studentID: '1902154',
 		warningCnt: 2,
-		message: 'DevTools Opened'
+		message: 'Full Screen Closed'
 	}
 ];
 
 const Status = ({
-	time = '19/01/2022 17:30',
+	time = '20/01/2022 17:30',
 	name = 'Periodic Test - DBMS',
-	link = 'http://google.com'
+	link = 'asd-qwvs-dfs'
 }) => {
 	return (
 		<div className="status-dashboard">

@@ -123,6 +123,7 @@ const Exam = ({
 					<h2>Warnings: {warningCnt}</h2>
 
 					<h1>Exam Terminated</h1>
+					<h3>Please contact your organization/admin.</h3>
 				</div>
 
 				{/* add blur to class */}

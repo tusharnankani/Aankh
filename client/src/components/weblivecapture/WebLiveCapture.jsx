@@ -31,7 +31,9 @@ const WebLiveCapture = () => {
 				videoConstraints={videoConstraints}
 			/>
 
-			<button onClick={capture}>Capture photo</button>
+			<button className="hide" onClick={capture}>
+				Capture photo
+			</button>
 		</React.Fragment>
 	);
 };

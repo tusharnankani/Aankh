@@ -111,7 +111,8 @@
 	.form-link,
 	.form h2,
 	.exam-details,
-	.timer {
+	.timer,
+	.image-capture {
 		display: none;
 		visibility: hidden;
 	}
@@ -122,5 +123,5 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	display: none;
+	margin-top: 5rem;
 }
