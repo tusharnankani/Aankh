@@ -1,6 +1,6 @@
 ## SETUP :
 
-Step 1: Create a virtual environment in model folder
+_STEP 1 :_ Create a virtual environment in model folder
 
 - Change working directory to model :
 
@@ -20,7 +20,7 @@ pip install virtualenv
 virtualenv venv
 ```
 
-Step 2 : Activate virtual environment :
+_STEP 2 :_ Activate virtual environment :
 
 ```bash
 venv\Scripts\activate
@@ -30,13 +30,13 @@ venv\Scripts\activate
 > Use command prompt to execute this
 > Will not work in powershell
 
-Step 2: Install required libraries
+_STEP 3 :_ Install required libraries
 
 ```py
 pip install -r requirements.txt
 ```
 
-Step 3 : Run flask app
+_STEP 4 :_ Run flask app
 
 ```bash
 python app.py
@@ -112,5 +112,5 @@ threshold = 0.5
 
 ---
 
-- Original repo for pose-estimation-model : [REPO_LINK](https://github.com/yinguobing/head-pose-estimation)
-- Link for object detection model : [MODEL_LINK](https://tfhub.dev/tensorflow/efficientdet/d0/1)
+- Original repo for pose-estimation-model 👉 [REPO_LINK](https://github.com/yinguobing/head-pose-estimation)
+- Link for object detection model 👉 [MODEL_LINK](https://tfhub.dev/tensorflow/efficientdet/d0/1)
