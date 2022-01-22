@@ -98,7 +98,7 @@ The presentation for Aankh can be found [here](https://docs.google.com/presentat
 
 <br />
 
-**Register & Login**
+**Landing Page**
 
 <p align="left">
   <img src='./images/landing_1.png' alt='Intro Screen' width="80%">
@@ -107,8 +107,35 @@ The presentation for Aankh can be found [here](https://docs.google.com/presentat
 </p>
 
 <br />
+<br />
+
+**Register & Login**
+<br />
+
+<table>
+    <tr>
+        <td>
+            <img src='./images/register.png' alt='REGISTER'>
+        </td>
+        <td>
+            <img src='./images/login.png' alt='LOGIN'>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <p>User Registration - Face Verifacation to be done when exam starts.</p>
+        </td>
+        <td>
+          <p>User Login to start the exam.</p>
+        </td>
+    </tr>
+</table>
+
+<br />
 
 **Creating a Test and Dashbaord**
+
+<br />
 
 <table>
     <tr>
@@ -131,26 +158,21 @@ The presentation for Aankh can be found [here](https://docs.google.com/presentat
 
 <br />
 
-**Test Admin Dashboard**
+**Start Exam**
 
-<table>
-    <tr>
-        <td>
-            <img src='./images/test_dashboard_1.png' alt='Test Dashboard'>
-        </td>
-        <td>
-            <img src='./images/test_dashboard_2.png' alt='Test Dashboard 2'>
-        </td>
-    </tr>
-    <tr>
-        <td>
-          <p>Test Dashboard: Admin can see statistics - no. of students with warnings and above the threshold.</p>
-        </td>
-        <td>
-          <p>Admin Dashboard: Admin can Terminate or Continue a students exam based on warnings.</p>
-        </td>
-    </tr>
-</table>
+- After logging in and entering the unique test code.
+- Live Snapshots will be captured, periodically and will be analysed for the following :
+  -  Face Verification
+  -  Face Cover/Visibility
+  -  Multiple People Detection
+<br />
+
+<img src='./images/exam.png' alt='Start Exam' width="80%">
+<br />
+
+**Building a chrome extension for track of tabs**
+
+<img src="https://user-images.githubusercontent.com/61280281/150633013-63494d63-13fd-4d97-8bed-b0700551cbe8.jpg" width="40%" />
 
 <br />
 
@@ -162,6 +184,7 @@ The presentation for Aankh can be found [here](https://docs.google.com/presentat
 - Dev Tools Check
 - Multiple Tabs Check
 - Full Screen Check
+
 <br />
 
 <table>
@@ -190,6 +213,36 @@ Also, **ideas rejected**: These were rejcted due to false positives and unsurity
 - Eye Tracking
 - Object detection
 - Mouse Tracking
+
+<br />
+
+<br />
+
+**Test Admin Dashboard**
+
+- The following warning logs, data and statistics will be emailed to the Admin after the test.
+
+<br />
+
+<table>
+    <tr>
+        <td>
+            <img src='./images/test_dashboard_1.png' alt='Test Dashboard'>
+        </td>
+        <td>
+            <img src='./images/test_dashboard_2.png' alt='Test Dashboard 2'>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <p>Test Dashboard: Admin can see statistics - no. of students with warnings and above the threshold.</p>
+        </td>
+        <td>
+          <p>Admin Dashboard: Admin can Terminate or Continue a students exam based on warnings.</p>
+        </td>
+    </tr>
+</table>
+
 
 <br />
 
@@ -323,7 +376,6 @@ server
 
 [GNU General Public License v3.0](/LICENSE)
 
-<br />
 
 ### Authors
 
