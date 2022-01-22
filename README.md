@@ -321,7 +321,7 @@ server
 
 ### License 📜
 
-[GPU License](/LICENSE)
+[GNU General Public License v3.0](/LICENSE)
 
 <br />
 
