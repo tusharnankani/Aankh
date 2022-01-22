@@ -7,7 +7,7 @@
   A straightforward framework built for automatic proctoring to create online tests, <i>effortlessly</i>.
   <br />
   <br />
-  <a href=""><b>Explore the docs »</b></a>
+  <a href="#table-of-content"><b>Explore the docs »</b></a>
   <br />
   <br />
   <a href="#architecture-and-design">Architecture</a>
@@ -20,20 +20,24 @@
 
 <br />
 <br />
+
 <p align="center">
-<img src="./images/landing_page.gif" alt="landing-page-gif" width="70%" />
+  <img src="./images/landing_page.gif" alt="landing-page-gif" width="80%" />
 </p>
+
 <br />
 
 ### Table Of Content
 
-- Architecture
-- Design
-- Demonstration
-- Technologies Used
-- Local Setup
-- Authors
+- [Architecture](#architecture-and-design)
+- [Design](#design)
+- [Demonstration & Features](#demonstration)
+- [Technologies Used](#technologies-used)
+- [Local Setup & Contributing](#contributing)
+- [License](#license-)
+- [Authors](#authors)
 
+<br />
 
 ### Problem we are trying to solve?
 
@@ -63,7 +67,7 @@ That's where we come into picture.
 
 ## Architecture and Design
 
-The tradeoffs in a Hackathon: `Speed over quality`
+The tradeoff in a Hackathon: `Speed over quality`
 
 But something that we are proud of is, we tried to follow ideal software development practices.
 
@@ -72,9 +76,9 @@ But something that we are proud of is, we tried to follow ideal software develop
 - Code
 <br />
 
-### Architecture
-
 The presentation for Aankh can be found [here](https://docs.google.com/presentation/d/1h3WqCwEhf5xG7TsZ-yNuDoE9ybbFiaAMEsltQ3KrLEc/edit?usp=sharing).
+
+### Architecture
 
 - The architecture and workflow was built using [excalidraw](https://excalidraw.com) and it is freaking [brilliant](https://github.com/excalidraw/excalidraw).
 <br />
@@ -85,20 +89,70 @@ The presentation for Aankh can be found [here](https://docs.google.com/presentat
 
 - The designs were built using [Figma](figma.com) and were brought to life with [React](https://beta.reactjs.org).
 - [Design Link](https://www.figma.com/file/pbuXQGcgFpsi2lgEbtllXf/aankh)
+
 <br />
-<img src="./images/all_designs.svg" />
+  <img src="./images/all_designs.svg" />
 <br />
 
 ## Demonstration
 
 <br />
-- Landing Page
 
+**Register & Login**
 
-Admin Dashboard 
-- Create a test, Dashboard, Status
+<p align="left">
+  <img src='./images/landing_1.png' alt='Intro Screen' width="80%">
+  <img src='./images/landing_2.png' alt='Features' width="80%">
+  <img src='./images/landing_3.png' alt='Features 2' width="80%">
+</p>
 
-Student Test Register, Login, Dashboard
+<br />
+
+**Creating a Test and Dashbaord**
+
+<table>
+    <tr>
+        <td>
+            <img src='./images/create.png' alt='Create Test'>
+        </td>
+        <td>
+            <img src='./images/dashboard.png' alt='Dashboard'>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <p>Creating a test and expecting a Google/Microsoft Form Link</p>
+        </td>
+        <td>
+          <p>Admin Dashboard: Tests arranged chronologically.</p>
+        </td>
+    </tr>
+</table>
+
+<br />
+
+**Test Admin Dashboard**
+
+<table>
+    <tr>
+        <td>
+            <img src='./images/test_dashboard_1.png' alt='Test Dashboard'>
+        </td>
+        <td>
+            <img src='./images/test_dashboard_2.png' alt='Test Dashboard 2'>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <p>Test Dashboard: Admin can see statistics - no. of students with warnings and above the threshold.</p>
+        </td>
+        <td>
+          <p>Admin Dashboard: Admin can Terminate or Continue a students exam based on warnings.</p>
+        </td>
+    </tr>
+</table>
+
+<br />
 
 **Checks for cheating**
 
@@ -109,10 +163,11 @@ Student Test Register, Login, Dashboard
 - Multiple Tabs Check
 - Full Screen Check
 <br />
+
 <table>
     <tr>
         <td>
-            <img src='./images/test_response_1.png' alt='Intro Screen'>
+            <img src='./images/test_response_1.png' alt='Full Screen Detect'>
         </td>
         <td>
             <img src='./images/test_response_2.png' alt='Dev Tools'>
@@ -234,8 +289,7 @@ Read [this](https://github.com/tusharnankani/LeadsTracker#using-this-extension) 
 
 **Model**
 
-- Create virtual environment (add venv to gitignore) ``` virtualenv venv```
-- Install required libraries ```py pip install -r requirements.txt```
+The complete setup can be found in the [`model` directory](./model).
 
 NOTE:
 
@@ -263,6 +317,12 @@ server
 ```
 
 <br />
+<br />
+
+### License 📜
+
+[GPU License](/LICENSE)
+
 <br />
 
 ### Authors
