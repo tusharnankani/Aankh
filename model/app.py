@@ -12,6 +12,7 @@ from mark_detector import MarkDetector
 from pose_estimator import PoseEstimator
 
 app = Flask(__name__)
+print(cv2.__version__)
 
 multiple_people_detector = hub.load("https://tfhub.dev/tensorflow/efficientdet/d0/1")
 
