@@ -8,6 +8,7 @@
     "create-nx": "0.0.0"
   },
   "devDependencies": {
+    "@nx/react": "^20.2.2",
     "@nx/workspace": "18.0.1",
     "nx": "18.0.1"
   }
