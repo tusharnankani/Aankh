@@ -1,0 +1,14 @@
+{
+  "name": "@aankh/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {
+    "create-nx": "0.0.0"
+  },
+  "devDependencies": {
+    "@nx/workspace": "18.0.1",
+    "nx": "18.0.1"
+  }
+}
